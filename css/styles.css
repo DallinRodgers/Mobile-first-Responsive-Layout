@@ -9,8 +9,14 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-.header {
-  background: rgb(245, 244, 244);
+.dark__bg {
+  background: rgb(22, 165, 209);
+}
+
+.header,
+.footer,
+.contact {
+  background: rgb(245, 245, 245);
 }
 
 .header__title {
@@ -42,7 +48,8 @@ html {
   padding: 15px 0;
 }
 
-.portfolio__text {
+.portfolio__text,
+.contact__text {
   color: rgb(129, 129, 129);
   padding: 25px 10px;
 }
@@ -71,4 +78,64 @@ html {
 .project__photo {
   width: 100%;
   height: auto;
+}
+
+.skills__body {
+  padding: 15px;
+  margin: 20px;
+  display: inline-block;
+  background: #fff;
+}
+
+.skills__title {
+  padding: 10px;
+  font-weight: 300;
+  font-family: "Roboto", serif;
+  text-transform: uppercase;
+}
+
+.skills__text {
+  padding: 10px;
+}
+
+.skills__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.skills__item {
+  text-transform: uppercase;
+  background: rgb(22, 165, 209);
+  color: #fff;
+  padding: 5px;
+  margin: 5px 10px;
+  border-radius: 20px;
+}
+
+.skills__item:nth-child(even) {
+  background: rgb(151, 151, 151);
+  color: #fff;
+}
+
+.contact {
+  padding: 25px;
+}
+
+.contact__body {
+  padding: 10px;
+}
+
+.contact__title {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.contact__phone,
+.contact__email {
+  color: rgb(129, 129, 129);
+  margin-right: 5px;
 }
