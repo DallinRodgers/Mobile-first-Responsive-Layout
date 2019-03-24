@@ -16,30 +16,34 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <span class="header__title">Student Name</span>
-      <nav class="nav">
-        <a href="#" class="nav__item">Home</a>
-        <a href="#" class="nav__item">Portfolio</a>
-        <a href="#" class="nav__item">Skills</a>
-        <a href="#" class="nav__item">Contact</a>
-      </nav>
+    <header id="home" class="header">
+      <div class="header__top">
+        <span class="header__title">Student Name</span>
+        <nav class="nav">
+          <a href="#home" class="nav__item">Home</a>
+          <a href="#portfolio" class="nav__item">Portfolio</a>
+          <a href="#skills" class="nav__item">Skills</a>
+          <a href="#contact" class="nav__item">Contact</a>
+        </nav>
+      </div>
 
-      <img
-        src="images/responsive-layout-profile.png"
-        alt="Portfolio Photo"
-        class="portfolio__photo"
-      />
-      <div class="portfolio__text">
-        <p>
-          Hi! I'm a front-end developer who loves responsive design and css. I
-          recently finished a degreee in front-end web development at Treehouse
-          and am excited to put all my skills to use!
-        </p>
+      <div class="header__bottom">
+        <img
+          src="images/responsive-layout-profile.png"
+          alt="Portfolio Photo"
+          class="portfolio__photo"
+        />
+        <div class="portfolio__text">
+          <p>
+            Hi! I'm a front-end developer who loves responsive design and css. I
+            recently finished a degreee in front-end web development at
+            Treehouse and am excited to put all my skills to use!
+          </p>
+        </div>
       </div>
     </header>
     <main>
-      <section>
+      <section id="portfolio">
         <h1 class="projects__title">Portfolio</h1>
         <div class="projects">
           <div class="project">
@@ -128,7 +132,7 @@
           </div>
         </div>
       </section>
-      <section class="skills  dark__bg">
+      <section id="skills" class="skills  dark__bg">
         <div class="skills__body">
           <h2 class="skills__title">My Skills</h2>
           <p class="skills__text">
@@ -144,7 +148,7 @@
           </ul>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="contact__body">
           <h3 class="contact__title">Contact</h3>
           <p class="contact__text">
@@ -155,16 +159,23 @@
             <span class="contact__phone">Phone</span>
             <span>+1 (111) 555-1234</span>
           </div>
-          <div>
+          <div style="padding-bottom: 35px">
             <span class="contact__email">Email</span>
             <span>email@yoursite.com</span>
           </div>
         </div>
+        <hr />
       </section>
-      <footer class="footer">
-        <span class="footer__name">Student name</span>
-        <span class="footer__back-to-top">Back to top</span>
-      </footer>
     </main>
+    <footer class="footer">
+      <span class="footer__name">Student name</span>
+      <a href="index.html" class="footer__back-to-top">Back to top</a>
+      <nav class="nav__footer">
+        <a href="#home" class="nav__item">Home</a>
+        <a href="#portfolio" class="nav__item">Portfolio</a>
+        <a href="#skills" class="nav__item">Skills</a>
+        <a href="#contact" class="nav__item">Contact</a>
+      </nav>
+    </footer>
   </body>
 </html>
