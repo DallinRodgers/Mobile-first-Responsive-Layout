@@ -181,6 +181,9 @@ hr {
   .header__bottom {
     display: flex;
     flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
   .portfolio__photo {
     padding: 0 20px 50px 20px;
